@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.12.24"
+                id="HrAppModule_DepartmentsVOResources" Package="com.kt.test.model.am.rest.v1" usageMode="RESTClient">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="DepartmentsVO" RangeSize="5" DataControl="HrAppModuleDataControl" id="DepartmentsVOIter"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="DepartmentsVOIter" id="dept" AccessorFolder="Always">
+      <nodeDefinition DefName="com.kt.test.model.vo.DepartmentsVO" Name="com.kt.test.model.vo.DepartmentsVO"/>
+    </tree>
+  </bindings>
+</pageDefinition>
