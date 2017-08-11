@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.12.24" id="ResourceRegistry"
+             SeparateXMLFiles="false" Package="com.kt.rest6.model" ClientType="Generic">
+  <pageMap>
+    <page path="v1_student" usageId="v1_HrAppModule_StudentsVOResources"/>
+  </pageMap>
+  <dataControlUsages>
+    <BC4JDataControl id="HrAppModuleDataControl" Package="com.kt.rest6.model.eo"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="HrAppModuleLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+  <pageDefinitionUsages>
+    <page id="v1_HrAppModule_StudentsVOResources" path="com.kt.rest6.model.eo.rest.v1.HrAppModule_StudentsVOResources"/>
+  </pageDefinitionUsages>
+</Application>

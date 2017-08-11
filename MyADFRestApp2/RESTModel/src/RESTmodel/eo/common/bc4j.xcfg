@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!---->
+<BC4JConfig xmlns="http://xmlns.oracle.com/bc4j/configuration" version="11.1">
+  <AppModuleConfigBag ApplicationName="RESTmodel.eo.HrAppModule">
+    <AppModuleConfig name="HrAppModuleLocal" jbo.project="RESTmodel.RESTModel"
+                     ApplicationName="RESTmodel.eo.HrAppModule" DeployPlatform="LOCAL">
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/HrDS"/>
+      <Security AppModuleJndiName="RESTmodel.eo.HrAppModule"/>
+    </AppModuleConfig>
+    <AppModuleConfig name="HrAppModuleShared" jbo.project="RESTmodel.RESTModel"
+                     ApplicationName="RESTmodel.eo.HrAppModule" DeployPlatform="LOCAL">
+      <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/HrDS"/>
+      <Security AppModuleJndiName="RESTmodel.eo.HrAppModule"/>
+    </AppModuleConfig>
+  </AppModuleConfigBag>
+</BC4JConfig>

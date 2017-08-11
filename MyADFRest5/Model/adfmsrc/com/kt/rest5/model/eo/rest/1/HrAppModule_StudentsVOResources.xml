@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.12.24"
+                id="HrAppModule_StudentsVOResources" Package="com.kt.rest5.model.eo.rest.1" usageMode="RESTClient">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="StudentsVO1" RangeSize="5" DataControl="HrAppModuleDataControl" id="StudentsVO1Iter"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="StudentsVO1Iter" id="student" AccessorFolder="Always"></tree>
+  </bindings>
+</pageDefinition>
